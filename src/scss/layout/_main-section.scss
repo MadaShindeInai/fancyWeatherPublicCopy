@@ -1,0 +1,249 @@
+.location__map {
+  width: 650px;
+  height: 300px;
+}
+
+.wrapper {
+  background-position: center center;
+  background-size: cover;
+}
+
+.main {
+  margin-top: 55px;
+}
+.main__location,
+.main__data-and-time {
+  padding-left: 23px;
+  font-weight: 500;
+  font-size: $fsz-6;
+  font-family: $font-1;
+  color: $text-color-3;
+}
+.info__weather {
+  display: flex;
+}
+.main__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.weather__temp {
+  padding: 0 23px;
+  font-weight: 500;
+  font-size: $fsz-10;
+  font-family: $font-1;
+  color: $text-color-3;
+}
+.weather__adds-info img {
+  width: 150px;
+  height: 150px;
+}
+.adds-info__value,
+.location__coord {
+  padding-left: 80px;
+  font-weight: 500;
+  font-size: $fsz-2;
+  font-family: $font-1;
+  text-align: right;
+  color: $text-color-3;
+}
+.info__location {
+  margin-top: 20px;
+  margin-right: 23px;
+}
+.location__map {
+  width: 400px;
+  height: 250px;
+}
+
+.main__forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 55px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.forecast__item {
+  padding: 0 23px;
+  font-weight: 500;
+  font-size: $fsz-5;
+  font-family: $font-1;
+  text-align: center;
+  color: $text-color-3;
+  text-transform: uppercase;
+}
+.item__day-info {
+  display: flex;
+  padding-left: 10px;
+  font-size: $fsz-8;
+}
+.item__day-info img {
+  width: 100px;
+  height: 100px;
+}
+.day-info__temp {
+  margin-top: 20px;
+}
+
+.humidity-val {
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+  background-image: url("../assets/images/humidity.png");
+  background-size: cover;
+}
+
+.hum-box {
+  display: flex;
+}
+
+.humidity-image {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  margin-right: 20px;
+  background: url("../assets/images/humidity.png");
+  background-size: cover;
+}
+
+.value__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.humidity-wind {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  margin-right: 20px;
+  background: url("../assets/images/windy.png");
+  background-size: cover;
+}
+
+.humidity-feeling {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  margin-right: 20px;
+  background: url("../assets/images/global-warming.png");
+  background-size: cover;
+}
+
+.location-pins {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background: url("../assets/images/pins.png");
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .main__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__location {
+    margin: 0;
+  }
+  #map {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .forecast__item:nth-child(3) {
+    display: none;
+  }
+  .main__info {
+    margin-top: 0;
+    padding: 0 11px;
+  }
+  .main__data-and-time {
+    padding: 0 11px;
+    text-align: center;
+  }
+  .weather__temp {
+    font-size: $fsz-10;
+  }
+  .adds-info__value {
+    padding: 0;
+  }
+  .main__location {
+    padding: 0 11px;
+    font-size: $fsz-7;
+    text-align: center;
+  }
+  #map {
+    width: 550px;
+  }
+}
+
+@media (max-width: 700px) {
+  .info__weather {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__location {
+    font-size: $fsz-4;
+  }
+  .main__data-and-time {
+    font-size: $fsz-3;
+  }
+  .weather__adds-info {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+  }
+}
+
+@media (max-width: 675px) {
+  .main__forecast {
+    display: none;
+  }
+  .main__info {
+    padding-bottom: 20px;
+  }
+  .weather__temp {
+    font-size: $fsz-9;
+  }
+  .search-form__input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 590px) {
+  #map {
+    width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  #map {
+    width: 280px;
+  }
+  .weather__temp {
+    padding: 0;
+    font-size: $fsz-11;
+  }
+  .weather__adds-info {
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .main {
+    margin-top: 10px;
+  }
+  .header {
+    padding-top: 0;
+  }
+}
+@media (max-width: 435px) {
+  .header {
+    justify-content: flex-end;
+  }
+}

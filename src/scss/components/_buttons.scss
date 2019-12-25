@@ -1,0 +1,96 @@
+button {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 13px 24px;
+  font-weight: 300;
+  font-size: $fsz-2;
+  font-family: $font-1;
+  color: white;
+  text-decoration: none;
+  background-image: $btn-color;
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 16px 32px 0 rgba(0,40,120,0.35);
+  transition: 0.5s;
+}
+
+button:hover {
+  background-position: 0 0;
+  box-shadow: 0 0 0 0 rgba(0,40,120,0);
+}
+
+.search-form__button {
+  margin: 10px 8px 10px 0;
+  line-height: 22px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+select {
+  width: 67px;
+  height: 52px;
+  padding-left: 20px;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0.01px;
+  background-image: $btn-color;
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  outline: 0;
+  box-shadow: 0 16px 32px 0 rgba(0,40,120,0.35);
+  transition: 0.5s;
+
+  -webkit-appearance: none;
+  /* for FF */
+     -moz-appearance: none;
+  /* for IE */
+      -ms-appearance: none;
+          appearance: none!important;
+}
+
+select:hover {
+  background-position: 0 0;
+}
+
+.tools__lang-container {
+  margin: 10px 8px;
+  font-size: $fsz-3;
+  text-align: center;
+  color: $text-color-1;
+}
+
+option {
+  color: $text-color-2;
+  background: $color-1;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@media (max-width: 590px) {
+  button {
+    margin: 18px 8px;
+    padding: 5px 9px;
+  }
+  select {
+    width: 43px;
+    height: 38px;
+    margin-top: 6px;
+    padding-left: 8px;
+  }
+  .search-form__input {
+    height: 32px;
+  }
+}

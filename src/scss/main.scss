@@ -1,0 +1,12 @@
+@import "base/normalize";
+@import "base/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//components
+@import "components/buttons";
+@import "components/inputs";
+
+//layout and pages
+@import "layout/header";
+@import "layout/main-section";

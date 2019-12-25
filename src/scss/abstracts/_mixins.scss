@@ -1,0 +1,16 @@
+@mixin input() {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: $fsz-2;
+  line-height: 52px;
+  font-family: $font-1;
+  color: $text-color-1;
+  background-image: linear-gradient(90deg, #002878 0%, #33d9de 50%, #6ab1d7 100%);
+  background-position: 0 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+@mixin input-focused() {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
